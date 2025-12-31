@@ -8,7 +8,7 @@
 
 This repository contains the source code for reproducing the results in:
 
-> J. Kim, D. Yang, and M. Lee, "Diffusion-Regularized PINNs for Poisson Inverse Source Reconstruction of Charge Dynamics from Noisy Potential Measurements," *APL Computational Physics* (2025).
+> J. Kim, D. Yang, and M. Lee, "Diffusion-Regularized PINNs for Poisson Inverse Source Reconstruction of Charge Dynamics from Noisy Potential Measurements," (2025). *Under review.*
 
 ## Overview
 
@@ -172,11 +172,11 @@ with weights $[\lambda_{\text{poisson}}, \lambda_{\text{diffusion}}, \lambda_{\t
 
 ```bibtex
 @article{kim2025pdipinn,
-  title={Diffusion-Regularized PINNs for Poisson Inverse Source Reconstruction of Charge Dynamics from Noisy Potential Measurements},
+  title={...},
   author={Kim, Jungmin and Yang, Dongin and Lee, Minbaek},
-  journal={APL Computational Physics},
+  journal={Submitted to APL Computational Physics},
   year={2025},
-  publisher={AIP Publishing}
+  note={Under review}
 }
 ```
 
