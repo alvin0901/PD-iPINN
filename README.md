@@ -1,5 +1,9 @@
 # PD-iPINN
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18108529.svg)](https://doi.org/10.5281/zenodo.18108529)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+
 **Diffusion-Regularized Physics-Informed Neural Networks for Poisson Inverse Source Reconstruction of Charge Dynamics from Noisy Potential Measurements**
 
 This repository contains the source code for reproducing the results in:
@@ -28,12 +32,13 @@ PD-iPINN/
 │   ├── demo_gaussian.ipynb            # 1D Gaussian case
 │   ├── demo_2d.ipynb                  # 2D sinusoidal case
 │   └── demo_parameter_estimation.ipynb
-└── reproducibility/                   # Full reproduction scripts
-    ├── train_sin.py                   # 1D sinusoidal (Fig. 3-5)
-    ├── train_gaussian.py              # 1D Gaussian (Fig. 6-7)
-    ├── train_2d.py                    # 2D sinusoidal (Fig. 8-9)
-    ├── train_param.py                 # Parameter estimation (Fig. 10)
-    └── plot_figures.py                # Generate all figures
+├── reproducibility/                   # Full reproduction scripts
+│   ├── train_sin.py                   # 1D sinusoidal (Fig. 3-5)
+│   ├── train_gaussian.py              # 1D Gaussian (Fig. 6-7)
+│   ├── train_2d.py                    # 2D sinusoidal (Fig. 8-9)
+│   ├── train_param.py                 # Parameter estimation (Fig. 10)
+│   └── plot_figures.py                # Generate all figures
+└── results/                           # Training outputs (see Data Availability)
 ```
 
 ## Quick Start
@@ -55,6 +60,33 @@ Run any notebook directly in Colab without local installation:
 git clone https://github.com/alvin0901/PD-iPINN.git
 cd PD-iPINN
 pip install -r requirements.txt
+```
+
+## Data Availability
+
+Pre-trained results and figure data are archived on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18108529.svg)](https://doi.org/10.5281/zenodo.18108529)
+
+The `results/` folder in this repository is empty. You can either:
+
+**Option A: Download pre-computed results** (recommended for figure reproduction)
+```bash
+# Download from Zenodo and extract
+wget https://zenodo.org/record/18108529/files/results.zip
+unzip results.zip -d results/
+
+# Generate figures
+python reproducibility/plot_figures.py --data-dir ./results --fig-dir ./figures
+```
+
+**Option B: Run training from scratch** (requires GPU, ~50 hours total)
+```bash
+cd reproducibility
+python train_sin.py
+python train_gaussian.py
+python train_2d.py
+python train_param.py
 ```
 
 ## Reproducing Paper Results
