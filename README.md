@@ -23,7 +23,7 @@ PD-iPINN/
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
-├── demo/                              # Interactive notebooks (Colab-ready)
+├── demos/                             # Interactive notebooks (Colab-ready)
 │   ├── demo_sin.ipynb                 # 1D sinusoidal case
 │   ├── demo_gaussian.ipynb            # 1D Gaussian case
 │   ├── demo_2d.ipynb                  # 2D sinusoidal case
@@ -44,10 +44,10 @@ Run any notebook directly in Colab without local installation:
 
 | Demo | Description | Link |
 |------|-------------|------|
-| 1D Sinusoidal | Basic reconstruction | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demo/demo_sin.ipynb) |
-| 1D Gaussian | Localized charge | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demo/demo_gaussian.ipynb) |
-| 2D Sinusoidal | 2D extension | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demo/demo_2d.ipynb) |
-| Parameter Estimation | Learn D or k | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demo/demo_parameter_estimation.ipynb) |
+| 1D Sinusoidal | Basic reconstruction | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demos/demo_sin.ipynb) |
+| 1D Gaussian | Localized charge | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demos/demo_gaussian.ipynb) |
+| 2D Sinusoidal | 2D extension | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demos/demo_2d.ipynb) |
+| Parameter Estimation | Learn D or k | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alvin0901/PD-iPINN/blob/main/demos/demo_parameter_estimation.ipynb) |
 
 ### Option 2: Local Installation
 
